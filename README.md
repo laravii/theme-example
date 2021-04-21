@@ -1,3 +1,5 @@
+# Exemplo de utilização de Temas com Styles-components e Redux
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
