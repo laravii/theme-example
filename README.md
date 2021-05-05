@@ -1,4 +1,10 @@
+# Exemplo de utilização de Temas com Styles-components e Redux
+![Captura de Tela 2021-04-20 às 22 13 53](https://user-images.githubusercontent.com/66284603/115488198-7f220d00-a230-11eb-92d8-6c3800481f19.jpg)
+
+Onde é possível alterar a cor do gráfico ao selecionar uma cor correspondente.
+Quer testar? Então entra aqui: https://theme-app-nu.vercel.app/
 # Getting Started with Create React App
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
