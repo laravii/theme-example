@@ -47,25 +47,14 @@ function App() {
     console.log(values)
   }
 
-  const onBlur = (ev: any, name: string, value: string) => {
+  const onChange = (
+    name: 'primary_color' | 'secundary_color' | 'thirdy_color' | 'fourth_color',
+    value: string,
+  ) => {
     const colorsUpdated = {
       ...colors,
     }
-
-    switch (name) {
-      case 'primary_color':
-        colorsUpdated.primary_color = value
-        break
-      case 'secundary_color':
-        colorsUpdated.secundary_color = value
-        break
-      case 'thirdy_color':
-        colorsUpdated.thirdy_color = value
-        break
-      case 'fourth_color':
-        colorsUpdated.fourth_color = value
-        break
-    }
+    colorsUpdated[name] = value
     dispatch(updateColors(colorsUpdated))
   }
   return (
@@ -102,10 +91,10 @@ function App() {
                     {label}
                     <Field
                       name={typedField}
-                      value={props.values[typedField]}
                       type="color"
-                      onBlur={(ev: any) => {
-                        onBlur(ev, typedField, props.values[typedField])
+                      onChange={(e: any) => {
+                        props.setFieldValue(typedField, e.target.value)
+                        onChange(typedField, e.target.value)
                       }}
                     />
                   </label>
